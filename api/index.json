@@ -1,0 +1,16 @@
+[
+	{
+		"room_name": "Big Corporation",
+		"room_phone": "404-355-3444",
+		"room_reboot": 6,
+		"off_hour": 9,
+		"off_minute": 15
+	},
+	{
+		"room_name": "Tale Spin",
+		"room_phone": "404-355-3444",
+		"room_reboot": 8,
+		"off_hour": 9,
+		"off_minute": 15
+	}
+]
