@@ -10,6 +10,27 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		
+		<style>
+			.btn-print {
+				width: 50px;
+				height: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			@media print{
+				body * {
+					display: none;
+				}
+				#main, #main * {
+					display: inline-block;
+				}
+				
+			}
+		</style>
 	</head>
 	<body class="single is-preload">
 
@@ -101,6 +122,8 @@
 									<div class="title">
 										<h2><a href="#">Awakening</a></h2>
 										<p>What does it mean to “awake to Righteousness?”</p>
+										<p><button class="btn-print" type="button">
+											<span class="material-symbols-outlined">print</span></button></p>
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2023-10-20">Oct. 20th</time>
@@ -109,6 +132,7 @@
 								</header>
 								<span class="image featured"><img src="images/main-article-03.jpg" alt="" /></span>
 								
+							
 								<h2>Ice Breaker</h2>
 								<blockquote>Do you have a comical (brief) “wake up” story that you could share with the group &#8212;perhaps when someone woke you up with a prank, or maybe when a loud noise woke you? Or else, maybe you could share a sleep-talking experience.</blockquote>
 								
@@ -138,7 +162,7 @@
 															
 								<h2>Invitation</h2>
 								<blockquote>According to <strong>Psalm 17:15</strong> the first thing you see when you “awaken” is a revelation of His likeness.  Think for a moment and you will understand the logic of this passage.  When someone wakes you out of a deep sleep, the first thing you see is the person who woke you up.  Right now, God is gently nudging you, to wake you from your sleep.  If you will yield and respond to His call, the first thing you will experience is a revelation of Who He is!  If you listen carefully, your heart will hear His still, small Voice calling you to awaken.  Respond to that gentle call today!</blockquote>
-								
+							
 																
 								<footer>
 									<ul class="actions">
@@ -153,7 +177,7 @@
 								</footer>
 							</article>
 
-					</div>
+					</div> <!-- End Main -->
 
 				<!-- Footer -->
 					<section id="footer">
@@ -175,6 +199,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				const btnPrint = document.querySelector(".btn-print");
+					btnPrint.addEventListener("click", () => window.print());
+			</script>
 
 	</body>
 </html>
