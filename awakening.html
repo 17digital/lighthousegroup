@@ -9,26 +9,81 @@
 		<title>Lighthouse Group Lessons - Awakening</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" media="screen" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 		
 		<style>
-			.btn-print {
-				width: 50px;
-				height: 50px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+			@page {
+				margin: 0mm;
 			}
 			
 			@media print{
 				body * {
-					display: none;
+					<!--display: none; -->
+					background-color: white;
+					font-size: 13pt;
+					font-family: Arial, sans-serif;
+					line-height: 1.5em;
+					padding : 3px;
 				}
 				#main, #main * {
-					display: inline-block;
+					<!--display: block; -->
+					
+					width: 100%;
+				} 
+				aside, details, figcaption, figure,
+				footer, hgroup, menu, nav, section, menu {
+					display: none;
+				}
+				.image {
+					display: none;
+				}
+				.image.featured {
+					display: none !important;
+				}
+				.image.main img {
+					display: none;
+				}
+				.material-symbols-outlined {
+					display: none !important;
+				}
+				#wrapper > header a {
+					display: none !important;
+					
+				}
+				.post > header .meta * {
+					display: none;
+				} 
+				
+				.post > header .btn-print {
+					display: none !important;
+				}
+				.post > header .title h2 a {
+					font-size: 16pt;
+				}
+				.post > header .title p {
+					padding: 0;
+					
+				}
+				.page-break {
+					page-break-before: always;
+				}
+				footer ul {
+					display: none !important;
+				}
+				ol.discuss li {
+					margin: 1em;
+					<!--margin-top:1em;
+					margin-bottom: 1em; -->
+					
 				}
 				
+				<!--.post > header .meta .author img {
+					display: none !important;
+				}
+				.post > header .meta .published {
+					display: none !important;
+				} -->
 			}
 		</style>
 	</head>
@@ -147,8 +202,9 @@
 								<h2><i>Opening Scripture</i></h2>
 								<blockquote>“And do this, knowing the time, that now it is high time to awake out of sleep; for now our salvation is nearer than when we first believed”&#8212;Romans 13:11[NKJV]</blockquote>
 								
+								<div class="page-break"></div>
 								<h2>Discuss</h2>
-								<ol>
+								<ol class="discuss">
 									<li>Read the Opening Scripture (Romans 13:11).  What do you believe it means to “awake out of sleep” in spiritual terms?</li>
 									<li>Read Ephesians <strong>5:14-16</strong>.  Many believers have been lulled to sleep by the mundane matters of this life.  Why is it essential that we as believers awaken to Spiritual reality?</li>
 									<li>According to Scripture, we are called to REST IN HIM <em><u>always</u></em>, but we are called to awaken from slumber. How would you describe the difference between <em>rest</em> and <em>slumber</em>?</li>
