@@ -10,8 +10,82 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" media="screen" />
-		<link rel="stylesheet" href="assests/css/print.css" media="print" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	
+	<style>
+			@page {
+				margin: 0mm;
+			}
+			
+			@media print{
+				body * {
+					<!--display: none; -->
+					background-color: white;
+					font-size: 13pt;
+					font-family: Arial, sans-serif;
+					line-height: 1.5em;
+					padding : 3px;
+				}
+				#main, #main * {
+					<!--display: block; -->
+					
+					width: 100%;
+				} 
+				aside, details, figcaption, figure,
+				footer, hgroup, menu, nav, section, menu {
+					display: none;
+				}
+				.image {
+					display: none;
+				}
+				.image.featured {
+					display: none !important;
+				}
+				.image.main img {
+					display: none;
+				}
+				.material-symbols-outlined {
+					display: none !important;
+				}
+				#wrapper > header a {
+					display: none !important;
+					
+				}
+				.post > header .meta * {
+					display: none;
+				} 
+				
+				.post > header .btn-print {
+					display: none !important;
+				}
+				.post > header .title h2 a {
+					font-size: 16pt;
+				}
+				.post > header .title p {
+					padding: 0;
+					
+				}
+				.page-break {
+					page-break-before: always;
+				}
+				footer ul {
+					display: none !important;
+				}
+				ol.discuss li {
+					margin: 1em;
+					<!--margin-top:1em;
+					margin-bottom: 1em; -->
+					
+				}
+				
+				<!--.post > header .meta .author img {
+					display: none !important;
+				}
+				.post > header .meta .published {
+					display: none !important;
+				} -->
+			}
+		</style>
 		
 		
 	</head>
@@ -129,8 +203,9 @@
 								<h2><i>Opening Scripture</i></h2>
 								<blockquote>For you did not receive the spirit of bondage again to fear, but you received the Spirit of adoption by whom we cry out, “Abba, Father.”&#8212;Romans 8:15[NKJV]</blockquote>
 								
+								<div class="page-break"></div>
 								<h2>Discuss</h2>
-								<ol>
+								<ol class="discuss">
 									<li>Read the Opening Scripture <strong>Romans 8:15</strong>. Describe why the Spirit of Adoption and the spirit of fear are opposite forces.</li>
 									<li>Read <strong>1 John4:18</strong>. Describe how HIS perfect Love drives out fear in our lives.</li>
 									<li>Read <strong>Hebrews 2:14-15</strong>. In these verses, we find that JESUS has released us from bondage to the fear of death.  What does this truth mean to us as believers?</li>
